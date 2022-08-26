@@ -7,6 +7,11 @@ flash('System Settings','Systems Settings Updated Successfully', 'success');
 redirect('admin/settings');
 
 
+//Methid to clear Flash on admin
+public function clear_flash(){
+			$this->site->clear_flash();
+}		
+
 
 //Call this on your header section in admin
  echo flash();
